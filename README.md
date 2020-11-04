@@ -46,6 +46,10 @@ yarn start
 
 > You can modify the `output.publicPath` configuration in `webpack.config.prod.js` to set the url prefix for static resources.
 
+## THANKS
+
+The npmjs manage for installing for npx almost from my senior [IanYet](https://github.com/IanYet/create-webpack-slim)
+
 ## 说明
 
 -   本脚手架仅为最简单的 cube 样例，可供 webpack 使用
@@ -79,3 +83,7 @@ yarn start
 ```
 
 即可
+
+## 感谢
+
+上传至 npmjs 的方法是来源于偶的同事，感谢他([IanYet](https://github.com/IanYet/create-webpack-slim))
