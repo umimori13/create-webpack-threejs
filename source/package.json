@@ -1,5 +1,5 @@
 {
-    "name": "three-loader-example",
+    "name": "create-webpack-threejs",
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",

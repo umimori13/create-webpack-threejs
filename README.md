@@ -1,55 +1,81 @@
-# create-webpack-slim
+# threejs scaffold
 
-![](https://img.shields.io/badge/Windows-passsing-blue.svg) ![](https://img.shields.io/badge/MacOS-passsing-yellow.svg) ![](https://img.shields.io/badge/Linux-passsing-green.svg)
+## Description
 
-Quickly create a simple webpack app
+This scaffold only has simplest function to use threejs which is the cube example for webpack
 
-## Usage
+# Install
 
+To install this, you can follow the codes.
+'folderName' can be any folder name
+
+You need install yarn before using
+
+```bash
+npm install yarn -g
 ```
-npx create-webpack-slim my-app
-cd my-app
+
+and then
+
+```bash
+npx create-webpack-threejs [folderName]
+cd [folderName]
 yarn install
 yarn start
 ```
 
-![create-webpack-slim](https://raw.githubusercontent.com/IanYet/image/master/create-webpack-slim.png)
+## start example
+
+```bash
+yarn start
+```
 
 ## Content
 
-- dev config `webpack.config.dev.js`
-- - babel
-- - css module
-- - html template
-- - devServer
+-   dev config `webpack.config.dev.js`
+-   -   babel
+-   -   css module
+-   -   html template
+-   -   devServer
 
-- prod config `webpack.config.prod.js`
-- - css extract
-- - hash8 filename
-- - copy public
-- - split chunks
+-   prod config `webpack.config.prod.js`
+-   -   css extract
+-   -   hash8 filename
+-   -   copy public
+-   -   split chunks
 
 > You can modify the `output.publicPath` configuration in `webpack.config.prod.js` to set the url prefix for static resources.
 
-## loaders
+## 说明
 
-```
-babel-loader
-css-loader
-file-loader
-style-loader
-url-loader
-MiniCssExtractPlugin.loader
-```
+-   本脚手架仅为最简单的 cube 样例，可供 webpack 使用
 
-## plugins
+# 安装
 
-```
-clean-webpack-plugin
-copy-webpack-plugin
-html-webpack-plugin
-mini-css-extract-plugin
+必须已安装 [node.js](http://nodejs.org/)
+
+并已安装 yarn
+
+如未安装 yarn 可通过
+
+```bash
+npm install yarn -g
 ```
 
+若已安装 yarn，可直接在根目录运行
 
-Happy coding!
+```
+npx create-webpack-threejs [folderName]
+cd [folderName]
+yarn install
+```
+
+## 启动样例
+
+运行
+
+```bash
+yarn start
+```
+
+即可
