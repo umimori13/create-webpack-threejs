@@ -85,7 +85,7 @@ module.exports = {
         extensions: ['*', '.js', '.jsx'],
     },
     devServer: {
-        contentBase: path.join(__dirname, 'public/'),
+        // contentBase: path.join(__dirname, 'public/'),
         // port: 3000,
         // publicPath: 'http://localhost:3000/',
     },

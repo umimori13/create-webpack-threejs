@@ -1,11 +1,11 @@
 {
     "name": "create-webpack-threejs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "index.js",
     "license": "MIT",
     "scripts": {
         "build": "webpack --config webpack.config.prod.js",
-        "start": "webpack-dev-server --config webpack.config.dev.js --hot --open --color"
+        "start": "webpack serve --config webpack.config.dev.js --hot"
     },
     "devDependencies": {
         "@babel/cli": "^7.10.5",
@@ -17,17 +17,17 @@
         "copy-webpack-plugin": "^6.0.3",
         "css-loader": "^5.0.0",
         "file-loader": "^6.0.0",
-        "html-webpack-plugin": "^4.3.0",
+        "html-webpack-plugin": "^5.0.0-alpha.14",
         "mini-css-extract-plugin": "^1.2.1",
         "raw-loader": "^4.0.1",
         "style-loader": "^2.0.0",
         "url-loader": "^4.1.0",
-        "webpack": "^4.44.0",
-        "webpack-cli": "^3.3.12",
-        "webpack-dev-server": "^3.11.0"
+        "webpack": "^5.9.0",
+        "webpack-cli": "^4.2.0",
+        "webpack-dev-server": "^4.0.0-beta.0"
     },
     "dependencies": {
         "@babel/runtime": "^7.10.5",
-        "three": "^0.122.0"
+        "three": "^0.123.0"
     }
 }

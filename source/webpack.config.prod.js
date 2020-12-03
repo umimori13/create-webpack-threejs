@@ -46,7 +46,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|jpg|gif|svg)$/i,
+                test: /\.(ico|gif|png|jpg|jpeg|svg)$/i,
                 use: [
                     {
                         loader: 'url-loader',
@@ -65,7 +65,6 @@ module.exports = {
     resolve: {
         extensions: ['*', '.js', '.jsx'],
     },
-    devtool: 'none',
     optimization: {
         runtimeChunk: {
             name: 'runtime',
@@ -98,19 +97,20 @@ module.exports = {
             filename: 'css/[name].[hash:8].css',
         }),
         new HtmlWebpackPlugin({
-            title: 'Vark',
+            title: 'threejs example',
+            // filename: __dirname + '/build/index.html',
             template: __dirname + '/public/index.html',
-            favicon: __dirname + '/public/favicon.ico',
+            // favicon: __dirname + '/public/favicon.ico',
         }),
-        new CopyPlugin({
-            patterns: [
-                {
-                    from: 'public/',
-                    // globOptions: {
-                    //     ignore: ['**/pointcloud/**', '**/libs/**'],
-                    // },
-                },
-            ],
-        }),
+        // new CopyPlugin({
+        //     patterns: [
+        //         {
+        //             from: 'public/',
+        //             // globOptions: {
+        //             //     ignore: ['**/pointcloud/**', '**/libs/**'],
+        //             // },
+        //         },
+        //     ],
+        // }),
     ],
 }
