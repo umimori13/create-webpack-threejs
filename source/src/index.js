@@ -1,4 +1,3 @@
-import { initThree, animate } from './initThree'
+import { initThree } from './initThree'
 
 initThree()
-animate()

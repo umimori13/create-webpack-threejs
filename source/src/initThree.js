@@ -33,6 +33,22 @@ const initThree = () => {
     container.appendChild(renderer.domElement)
 
     window.addEventListener('resize', onWindowResize, false)
+
+    const render = (timestamp, frame) => {
+        renderer.render(scene, camera)
+
+        cube.rotation.x += 0.01
+        cube.rotation.y += 0.01
+    }
+
+    const animate = () => {
+        renderer.setAnimationLoop(render)
+
+        // // if using RequestAnimation()
+        // requestAnimationFrame(animate)
+        // render()
+    }
+    animate()
 }
 
 const onWindowResize = () => {
@@ -42,19 +58,4 @@ const onWindowResize = () => {
     renderer.setSize(window.innerWidth, window.innerHeight)
 }
 
-const render = (timestamp, frame) => {
-    renderer.render(scene, camera)
-
-    cube.rotation.x += 0.01
-    cube.rotation.y += 0.01
-}
-
-const animate = () => {
-    renderer.setAnimationLoop(render)
-
-    // // if using RequestAnimation()
-    // requestAnimationFrame(animate)
-    // render()
-}
-
-export { initThree, animate }
+export { initThree }
